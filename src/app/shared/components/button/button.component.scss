@@ -1,0 +1,37 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  padding: 0 24px;
+  background:
+    linear-gradient(133deg, rgba(255, 255, 255, 0.08) 1%, rgba(255, 255, 255, 0.04) 48%, rgba(255, 255, 255, 0.08) 100%)
+      border-box,
+    var(--color-primary) border-box;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  color: var(--color-text-light);
+  font-size: 14px;
+  height: 52px;
+  cursor: pointer;
+
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
+    background:
+      linear-gradient(133deg, rgba(255, 255, 255, 0.08) 1%, rgba(255, 255, 255, 0.04) 48%, rgba(255, 255, 255, 0.08) 100%)
+        border-box,
+      color-mix(in srgb, var(--color-primary), #000 10%) border-box;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+}
