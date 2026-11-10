@@ -1,0 +1,33 @@
+.auth-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/images/background.png') center / cover no-repeat;
+}
+
+.auth-layout__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 250px;
+}
+
+.auth-layout__logo-icon {
+  width: 27px;
+  height: 29px;
+}
+
+.auth-layout__logo-text {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--color-text-light);
+}
+
+.auth-layout__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+  width: 100%;
+}
